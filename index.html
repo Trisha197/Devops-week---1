@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevOps CI/CD Pipeline Demo</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🚀 DevOps CI/CD Pipeline</h1>
+            <p class="subtitle">From Code to Production</p>
+        </header>
+
+        <div class="status-badge" id="statusBadge">
+            <span class="dot"></span>
+            <span id="deployStatus">Deployed Successfully</span>
+        </div>
+
+        <div class="pipeline">
+            <div class="step">
+                <div class="step-icon">💻</div>
+                <div class="step-content">
+                    <h3>1. Code</h3>
+                    <p>Write code & push to GitHub</p>
+                </div>
+                <div class="step-arrow">→</div>
+            </div>
+
+            <div class="step">
+                <div class="step-icon">🤖</div>
+                <div class="step-content">
+                    <h3>2. GitHub Actions</h3>
+                    <p>Automated build & test</p>
+                </div>
+                <div class="step-arrow">→</div>
+            </div>
+
+            <div class="step">
+                <div class="step-icon">🚀</div>
+                <div class="step-content">
+                    <h3>3. Deploy</h3>
+                    <p>Vercel auto-deployment</p>
+                </div>
+                <div class="step-arrow">→</div>
+            </div>
+
+            <div class="step">
+                <div class="step-icon">🌐</div>
+                <div class="step-content">
+                    <h3>4. Live</h3>
+                    <p>Your site goes live!</p>
+                </div>
+            </div>
+        </div>
+        <div class="deployment-info">
+            <div class="info-card">
+                <h4>📦 Latest Deployment</h4>
+                <p id="deployTime">Loading...</p>
+                <small>Triggered by: <span id="triggeredBy">GitHub Push</span></small>
+            </div>
+
+            <div class="info-card">
+                <h4>🔄 Auto-Deploy</h4>
+                <p>Every push to <code>main</code> branch</p>
+                <small>Vercel + GitHub Integration</small>
+            </div>
+
+            <div class="info-card">
+                <h4>📊 Status</h4>
+                <p id="buildStatus">✅ Build Passed</p>
+                <small>Last checked: <span id="lastChecked">Just now</span></small>
+            </div>
+        </div>
+
+        <div class="team-section">
+            <h2>👥 Our DevOps Team - CakePops</h2>
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="avatar">😛</div>
+                    <h4>Trisha</h4>
+                    <div class="social-links">
+                        <a href="#">GitHub</a>
+                        <a href="#">LinkedIn</a>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="avatar">😙</div>
+                    <h4>Tripti</h4>
+                    <div class="social-links">
+                        <a href="#">GitHub</a>
+                        <a href="#">LinkedIn</a>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="avatar">😍</div>
+                    <h4>Riya</h4>
+                    <div class="social-links">
+                        <a href="#">GitHub</a>
+                        <a href="#">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tech Stack -->
+        <div class="tech-stack">
+            <h2>🛠️ Tech Stack</h2>
+            <div class="tech-tags">
+                <span class="tech-tag">Git</span>
+                <span class="tech-tag">GitHub</span>
+                <span class="tech-tag">GitHub Actions</span>
+                <span class="tech-tag">Vercel</span>
+                <span class="tech-tag">HTML/CSS</span>
+                <span class="tech-tag">JavaScript</span>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>Made with by the DevOps Team- CakePops</p>
+            <p>
+                <span id="deployCount">0</span> deployments today
+                • 
+                <span id="uptime">100%</span> uptime
+            </p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
